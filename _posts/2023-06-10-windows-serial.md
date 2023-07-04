@@ -1,3 +1,12 @@
+
+---
+layout: post
+title: windows中打开COM口注意事项
+date: 2023-05-20
+tags: windows COM
+---
+
+
 ## **Windows中打开串口注意事项**
 
 在windows操作系统中，**若COM口为10及以上时**，需要在打开COM口时转换一下名称，在COM口前加上 **`\\.\`**, 比如COM32, 应该写成 **\\.\COM32**， 这样才能正确的打开。
